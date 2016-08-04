@@ -225,7 +225,7 @@ var ViewPager = React.createClass({
     if (this.props.renderPageIndicator === false) {
       return null;
     } else if (this.props.renderPageIndicator) {
-      return React.cloneElement(this.props.renderPageIndicator(), props);
+      return React.cloneElement(this.props.renderPageIndicator(props), props);
     } else {
       return (
         <View style={styles.indicators}>
